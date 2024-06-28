@@ -1,0 +1,16 @@
+create table if not exists razor_acceptance_to_withdrawals(
+razor_acceptance_code Integer not null,
+data_custodian_id Integer null,
+withdrawal_id Integer null,
+pre_transaction_applicable varchar(255) null,
+business_indicator Integer null,
+user_code char null,
+country_code char null,
+unit_name varchar(255) null,
+hpe_rates_mapping_id varchar(255) null,
+creation_cr varchar(255) null,
+modified_cr varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint razor_acceptance_to_withdrawals_pk primary key(razor_acceptance_code));
